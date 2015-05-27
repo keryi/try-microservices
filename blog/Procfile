@@ -1,0 +1,3 @@
+web: bundle exec rails s
+mail_service: sh -c 'cd services/mail_service; ruby main.rb'
+post_service: sh -c 'cd services/post_service; ruby main.rb'
