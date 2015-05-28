@@ -3,6 +3,7 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 require './services/post_service/implementation'
 require './services/post_service/models/post'
+require './services/post_service/models/comment'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.

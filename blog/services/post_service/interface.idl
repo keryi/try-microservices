@@ -7,6 +7,17 @@ struct Post extends PostProperties {
   id int
 }
 
+struct Comment {
+  id int
+  content string
+  created_at string
+  updated_at string
+  post_id int
+}
+
 interface PostService {
   get_all_posts() []Post
+  create_post(post_properties PostProperties) Post
+  get_post_by_id(id int) Post
+  get_comments_by_post_id(id int) []Comment
 }
