@@ -1,0 +1,12 @@
+struct PostProperties {
+  title string
+  content string
+}
+
+struct Post extends PostProperties {
+  id int
+}
+
+interface PostService {
+  get_all_posts() []Post
+}
